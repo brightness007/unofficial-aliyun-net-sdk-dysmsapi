@@ -17,13 +17,10 @@
  * under the License.
  */
 
-using Aliyun.Net.SDK.Core;
-using Aliyun.Net.SDK.Core.Http;
-using Aliyun.Net.SDK.Core.Transform;
-using Aliyun.Net.SDK.Core.Utils;
-using Aliyun.Acs.Dysmsapi.Transform;
+using Aliyun.Acs.Core;
+using Aliyun.Acs.Core.Transform;
+using Aliyun.Acs.Core.Utils;
 using Aliyun.Acs.Dysmsapi.Transform.V20170525;
-using System.Collections.Generic;
 
 namespace Aliyun.Acs.Dysmsapi.Model.V20170525
 {
@@ -184,7 +181,7 @@ namespace Aliyun.Acs.Dysmsapi.Model.V20170525
             }
         }
 
-        public override QuerySendDetailsResponse GetResponse(Aliyun.Net.SDK.Core.Transform.UnmarshallerContext unmarshallerContext)
+        public override QuerySendDetailsResponse GetResponse(UnmarshallerContext unmarshallerContext)
         {
             return QuerySendDetailsResponseUnmarshaller.Unmarshall(unmarshallerContext);
         }

@@ -17,13 +17,10 @@
  * under the License.
  */
 
-using Aliyun.Net.SDK.Core;
-using Aliyun.Net.SDK.Core.Http;
-using Aliyun.Net.SDK.Core.Transform;
-using Aliyun.Net.SDK.Core.Utils;
-using Aliyun.Acs.Dysmsapi.Transform;
+using Aliyun.Acs.Core;
+using Aliyun.Acs.Core.Transform;
+using Aliyun.Acs.Core.Utils;
 using Aliyun.Acs.Dysmsapi.Transform.V20170525;
-using System.Collections.Generic;
 
 namespace Aliyun.Acs.Dysmsapi.Model.V20170525
 {
@@ -42,7 +39,7 @@ namespace Aliyun.Acs.Dysmsapi.Model.V20170525
         private long? resourceOwnerId;
 
         public QueryInterSmsIsoInfoRequest()
-                                                            : base("Dysmsapi", "2017-05-25", "QueryInterSmsIsoInfo")
+            : base("Dysmsapi", "2017-05-25", "QueryInterSmsIsoInfo")
         {
         }
 
@@ -124,7 +121,7 @@ namespace Aliyun.Acs.Dysmsapi.Model.V20170525
             }
         }
 
-        public override QueryInterSmsIsoInfoResponse GetResponse(Aliyun.Net.SDK.Core.Transform.UnmarshallerContext unmarshallerContext)
+        public override QueryInterSmsIsoInfoResponse GetResponse(UnmarshallerContext unmarshallerContext)
         {
             return QueryInterSmsIsoInfoResponseUnmarshaller.Unmarshall(unmarshallerContext);
         }

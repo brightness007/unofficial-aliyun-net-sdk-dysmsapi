@@ -16,16 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-using Aliyun.Net.SDK.Core;
+using Aliyun.Acs.Core;
 using System.Collections.Generic;
 
 namespace Aliyun.Acs.Dysmsapi.Model.V20170525
 {
-	public class QuerySendDetailsResponse : AcsResponse
+    public class QuerySendDetailsResponse : AcsResponse
 	{
-
-		private string requestId;
-
 		private string code;
 
 		private string message;
@@ -33,18 +30,6 @@ namespace Aliyun.Acs.Dysmsapi.Model.V20170525
 		private string totalCount;
 
 		private List<QuerySendDetails_SmsSendDetailDTO> smsSendDetailDTOs;
-
-		public string RequestId
-		{
-			get
-			{
-				return requestId;
-			}
-			set	
-			{
-				requestId = value;
-			}
-		}
 
 		public string Code
 		{

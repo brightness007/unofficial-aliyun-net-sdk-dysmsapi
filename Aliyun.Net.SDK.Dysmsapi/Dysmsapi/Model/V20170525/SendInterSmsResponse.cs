@@ -16,33 +16,17 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-using Aliyun.Net.SDK.Core;
-using System.Collections.Generic;
+using Aliyun.Acs.Core;
 
 namespace Aliyun.Acs.Dysmsapi.Model.V20170525
 {
-	public class SendInterSmsResponse : AcsResponse
+    public class SendInterSmsResponse : AcsResponse
 	{
-
-		private string requestId;
-
 		private string bizId;
 
 		private string code;
 
 		private string message;
-
-		public string RequestId
-		{
-			get
-			{
-				return requestId;
-			}
-			set	
-			{
-				requestId = value;
-			}
-		}
 
 		public string BizId
 		{

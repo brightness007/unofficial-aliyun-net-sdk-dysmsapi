@@ -16,10 +16,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-using Aliyun.Net.SDK.Core.Transform;
+using Aliyun.Acs.Core.Transform;
 using Aliyun.Acs.Dysmsapi.Model.V20170525;
-using System;
-using System.Collections.Generic;
 
 namespace Aliyun.Acs.Dysmsapi.Transform.V20170525
 {
